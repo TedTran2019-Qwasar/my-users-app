@@ -9,10 +9,12 @@ Project Setup
 A brief reminder
 1. Do commands from root directory
 2. You are emulating the browser using curl, hence the need for a cookie file
+  
   2a. curl -c cookie.txt -b cookie.txt to write and read to the same cookie store like browsers do
 
 Use
 1. Create User: curl -X POST http://localhost:3000/users -d firstname=Ted -d lastname=Tran -d age=27 -d email=Ted@gmail.com -d password=password
+
   1a. Creating user DOESN'T log you in. 
 
 2. Get all Users: curl http://localhost:3000/users
